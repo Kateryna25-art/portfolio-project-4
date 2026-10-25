@@ -1,0 +1,22 @@
+@use "sass:map";
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1200px,
+);
+
+@function bp($name) {
+  @if not map.has-key($breakpoints, $name) {
+    @error "Неизвестный брейкпоинт `#{$name}`. Доступны: #{map.keys($breakpoints)}";
+  }
+
+  @return map.get($breakpoints, $name);
+}
+
+@mixin down($name) {
+  @media (max-width: #{bp($name) - 0.02px}) {
+    @content;
+  }
+}

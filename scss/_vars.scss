@@ -1,0 +1,26 @@
+$color-white: #fff;
+$color-accent: #A18A68;
+$color-primary: #707070;
+$color-muted: #EFEFEF;
+$color-text: #000;
+$color-secondary:#D8D8D8;
+
+%dmsans-400 {
+    font-family: 'DMSans-Regular', sans-serif;
+    font-weight: 400;
+}
+
+%dmsans-500 {
+    font-family: 'DMSans-Medium', sans-serif;
+    font-weight: 500;
+}
+
+%dmsans-700 {
+    font-family: 'DMSans-Bold', sans-serif;
+    font-weight: 700;
+}
+
+%allerta-400 {
+    font-family: 'AllertaStencil-Regular', sans-serif;
+    font-weight: 400;
+}
